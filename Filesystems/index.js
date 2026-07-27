@@ -18,3 +18,13 @@ fs.writeFile("./writefiletest.txt",data,(err)=>{
         console.log("error :",err)
     }
 })
+
+
+fs.writeFile("./writefiletest.txt",data,{flag:"a"},(err)=>{//appendding data
+ if (err == null || err == undefined){
+        console.log("Data added successfully!")
+    }
+    else{
+        console.log("error :",err)
+    }
+})
