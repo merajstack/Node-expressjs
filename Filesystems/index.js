@@ -8,34 +8,43 @@ const fs = require('fs');
 //         console.log("Error :",err);
 //     }
 // })
-data = "Hello iam Meraj md  , studying in niat"
-data = "Hello iam Meraj   , studying in niat"
-fs.writeFile("./writefiletest.txt",data,(err)=>{
-    if (err == null || err == undefined){
-        console.log("Data added successfully!")
-    }
-    else{
-        console.log("error :",err)
-    }
-})
+// data = "Hello iam Meraj md  , studying in niat"
+// data = "Hello iam Meraj   , studying in niat"
+// fs.writeFile("./writefiletest.txt",data,(err)=>{
+//     if (err == null || err == undefined){
+//         console.log("Data added successfully!")
+//     }
+//     else{
+//         console.log("error :",err)
+//     }
+// })
 
 
-fs.writeFile("./writefiletest.txt",data,{flag:"a"},(err)=>{//appendding :"a",replacing : "w"
- if (err == null || err == undefined){
-        console.log("Data added successfully!")
+// fs.writeFile("./writefiletest.txt",data,{flag:"a"},(err)=>{//appendding :"a",replacing : "w"
+//  if (err == null || err == undefined){
+//         console.log("Data added successfully!")
+//     }
+//     else{
+//         console.log("error :",err)
+//     }
+// })
+// /*                  /\
+//     Both are same   ||
+//                     \/      */
+// fs.appendFile("./appendfiletest.txt",data,(err)=>{
+//     if (err == null  || err == "undefined"){
+//         console.log("Data appended successfully!")
+//     }
+//     else{
+//         console.log("error is" ,err)
+//     }
+// })
+
+fs.rename("./novel.txt","./story.txt",(err)=>{
+    if(err == null || err == "undefined"){
+        console.log("File renamed successfully");
     }
     else{
-        console.log("error :",err)
-    }
-})
-/*                  /\
-    Both are same   ||
-                    \/      */
-fs.appendFile("./appendfiletest.txt",data,(err)=>{
-    if (err == null  || err == "undefined"){
-        console.log("Data appended successfully!")
-    }
-    else{
-        console.log("error is" ,err)
+        console.log(err);
     }
 })
