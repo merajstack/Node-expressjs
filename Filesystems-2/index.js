@@ -17,3 +17,7 @@
 //         console.log(err)
 //     }
 // })
+
+fs.access("./students/student1.txt",(err,data)=>{
+    
+})
