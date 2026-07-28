@@ -1,0 +1,2 @@
+Artificial Intelligence (AI) refers to the simulation of human intelligence processes by machines, particularly computer systems. These processes include learning (the acquisition of information and rules for using it), reasoning (using the rules to reach approximate or definite conclusions), and self-correction. AI systems can be designed to mimic cognitive functions such as perception, problem-solving, and decision-making, allowing them to perform tasks that normally require human intelligence.
+
