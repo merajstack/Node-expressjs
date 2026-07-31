@@ -70,12 +70,30 @@ const fs = require('fs');
 
 //---------------------------------------------------------------------------------
 // Using rename to move a file into other folder
-fs.rename("./student.txt","./student/student.txt",(err)=>{
-    if(err === null || err === undefined){
-        console.log("File moved successfully");
-    }
-    else{
-        console.log("Error Msg:",err)
-    }
-})
+// fs.rename("./student.txt","./student/student.txt",(err)=>{
+//     if(err === null || err === undefined){
+//         console.log("File moved successfully");
+//     }
+//     else{
+//         console.log("Error Msg:",err)
+//     }
+// })
+
 //---------------------------------------------------------------------------------
+// fs.readdir("./student",(err,contents)=>{
+//     if (err === null || err === undefined){ 
+//         console.log("The contents are :",contents)}
+//         //The contents are : [ 'student.txt', 'student1.txt' ]
+//         else{
+//             console.log("Error is  :",err)
+//         }
+// })
+
+// fs.rm("./notes",{recursive:true},(err)=>{
+//     if (err === null || err === undefined){ 
+//         console.log("The directory deleted successfully ")}
+//         else{
+//             console.log("Error is  :",err)
+//         }
+// })
+
